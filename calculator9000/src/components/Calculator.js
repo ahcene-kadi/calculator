@@ -32,7 +32,6 @@ const Calculator = () => {
                 <IsOverNineThousend ninethousend={result} />
                 <BeautifullScreen valeur={value} resultat={result} />
                 <div className='opp'>
-
                 <GreatOperationButton operator={calculette} />
                 </div>
                 <div className='buttons'>
