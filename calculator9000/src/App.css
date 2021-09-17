@@ -1,38 +1,116 @@
-.TheTitle {
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+/* quick reset so all our padding is the right size */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+
+/* add some spacing */
+body          {
+  text-align: center;
+  
+  background: #F6F6F6;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.thetitle {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* limit the width and center */
+.calculator   {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.BeautifullScreen {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  padding: 20px 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.BeautifullScreen,
+.calc-button   {
+  font-family: 'Space Mono';
 }
 
-.App-link {
-  color: #61dafb;
+
+.calc-button  {
+  background: rgba(0, 0, 0, 0.5); /* light background with opacity 50% */
+  border: 1px solid #111; /* black border */
+  padding: 15px;
+  color: #EEE; /* white text */
+  border-radius: 5px; /* rounded corners */
+  font-size: 20px; /* larger fonts */
+  cursor: pointer; /* make it look clickable */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator input   {
+  /* reset basic form styles */
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
 }
+
+.opp {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+
+}
+
+.buttons {
+  /* small spacing within our container */
+  padding: 10px;
+
+  /* the grid stuff! */
+  display: grid;
+
+  /* create 4 columns */
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap: 5px;
+
+}
+
+.zero, .egale{
+  grid-column: span 3;
+}
+
+.C {
+  grid-column: span 3;
+}
+
+.egale {
+  background-color: turquoise;
+}
+

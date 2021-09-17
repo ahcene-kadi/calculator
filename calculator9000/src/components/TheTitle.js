@@ -1,9 +1,9 @@
-import './App.css';
 
-function TheTitle() {
+
+const TheTitle = (props) => {
   return (
     <div className="TheTitle">
-      <h1>Calculator 9000</h1>
+      <h1>{props.title}</h1>
     </div>
   );
 }
