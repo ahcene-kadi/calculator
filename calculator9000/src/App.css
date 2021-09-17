@@ -110,7 +110,8 @@ body          {
   grid-column: span 3;
 }
 
-.egale {
+.egale, .multiplication, .plus, .moins, .division {
   background-color: turquoise;
+  color: black;
 }
 
