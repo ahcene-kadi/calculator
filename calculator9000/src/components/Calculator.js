@@ -18,7 +18,6 @@ const Calculator = () => {
     const calculette = function (e) {
 
         setValue(value + e.target.id);
-        console.log(value);
     };
 
     const resultats = function () {
