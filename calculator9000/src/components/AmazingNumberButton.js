@@ -13,7 +13,8 @@ const AmazingNumberButton = (props) => {
       <button className="calc-button un" id='1'  onClick={props.operator}>1</button>
       <button className="calc-button deux" id='2'  onClick={props.operator}>2</button>
       <button className="calc-button trois" id='3'  onClick={props.operator}>3</button>
-      <button {...props.zero} className="calc-button zero" id='0'  onClick={props.operator}>0</button>
+      <button className="calc-button virgule" id='.'  onClick={props.operator}>,</button>
+      <button className="calc-button zero" id='0'  onClick={props.operator}>0</button>
     </>
   );
 }
